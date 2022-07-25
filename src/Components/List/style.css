@@ -26,3 +26,7 @@
   color: rgba(33, 37, 41, 1);
   margin-right: 110px;
 }
+
+li {
+  margin-top: 32px;
+}

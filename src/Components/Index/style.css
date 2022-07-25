@@ -57,3 +57,7 @@ p {
   height: 593px;
   margin: 94px 256px 94px 48px;
 }
+
+.textBottom {
+  color: rgba(255, 255, 255, 1);
+}

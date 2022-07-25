@@ -12,7 +12,7 @@ function index({ setHomePage }) {
         <div className="left-block">
           <img src={nukenzie} className="logo" />
           <p className="main-text">Centralize o controle das suas finanças</p>
-          <p>de forma rápida e segura</p>
+          <p className="textBottom">de forma rápida e segura</p>
           <button onClick={changePage} className="buttonIndex">
             Iniciar
           </button>

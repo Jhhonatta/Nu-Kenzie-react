@@ -1,35 +1,35 @@
 import trash from "./Icons/trash.svg";
 import "./style.css";
 
-function Card({ transactions, key }) {
+function Card({ transactions, indice }) {
   return transactions.type === "entrada" ? (
     <>
-      <div className="containerSupreme" key={key}>
-        <div className="containerSideGreen"></div>
+      <div className="containerSupreme" key={indice}>
         <div className="containerGrey">
-          <div className="left-block">
-            <p>{transactions.description}</p>
-            <p>{transactions.type}</p>
+          <div className="containerSideGreen"></div>
+          <div className="block-left">
+            <p className="titleCard">{transactions.description}</p>
+            <p>Entrada</p>
           </div>
-          <div className="right-block">
-            <p>{`R$ ${transactions.value}`}</p>
-            <img src={trash} />
+          <div className="block-right">
+            <p className="priceCard">{`R$ ${transactions.value}`}</p>
+            <img src={trash} className="imgTrash" />
           </div>
         </div>
       </div>
     </>
   ) : (
     <>
-      <div className="containerSupreme" key={key}>
-        <div className="containerSideGrey"></div>
+      <div className="containerSupreme" key={indice}>
         <div className="containerGrey">
-          <div className="left-block">
-            <p>{transactions.description}</p>
-            <p>{transactions.type}</p>
+          <div className="containerSideGrey"></div>
+          <div className="block-left">
+            <p className="titleCard">{transactions.description}</p>
+            <p>Despesa</p>
           </div>
-          <div className="right-block">
-            <p>{`R$ ${transactions.value}`}</p>
-            <img src={trash} />
+          <div className="block-right">
+            <p className="priceCard">{`R$ ${-transactions.value}`}</p>
+            <img src={trash} className="imgTrash" />
           </div>
         </div>
       </div>

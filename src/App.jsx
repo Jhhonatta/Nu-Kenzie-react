@@ -24,7 +24,10 @@ function App() {
         <ButtonHeader setHomePage={setHomePage} />
       </header>
       <main>
-        <Form />
+        <Form
+          setListTransactions={setListTransactions}
+          listTransactions={listTransactions}
+        />
         <List listTransactions={listTransactions} />
       </main>
     </>
