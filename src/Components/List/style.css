@@ -1,0 +1,28 @@
+.containerHigher {
+  display: flex;
+  width: 562px;
+  height: 40px;
+}
+
+.buttonList {
+  height: 40px;
+  width: 89px;
+  margin: 0px 16px 0px 0px;
+  border-radius: 8px;
+}
+
+.buttonList:nth-of-type(1) {
+  background: rgba(253, 55, 126, 1);
+  color: white;
+}
+
+.textTitleList {
+  height: 30px;
+  width: 137px;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgba(33, 37, 41, 1);
+  margin-right: 110px;
+}

@@ -1,0 +1,59 @@
+.container {
+  background-color: black;
+  height: 781px;
+  position: 0;
+  display: flex;
+}
+
+.left-block {
+  height: auto;
+  margin: 214px 48px 0px 256px;
+}
+
+.main-text {
+  color: rgba(255, 255, 255, 1);
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 800;
+  width: 347px;
+  height: 144px;
+  font-family: "Nunito";
+}
+
+.logo {
+  margin-bottom: 30.47px;
+}
+
+p {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Nunito";
+  margin-bottom: 28px;
+}
+
+.buttonIndex {
+  background-color: rgba(253, 55, 126, 1);
+  border: 2px solid rgba(253, 55, 126, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  width: 241px;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.right-block {
+  width: 593px;
+  height: 593px;
+}
+
+.card {
+  width: 593px;
+  height: 593px;
+  margin: 94px 256px 94px 48px;
+}

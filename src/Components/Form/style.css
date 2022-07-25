@@ -1,0 +1,91 @@
+form {
+  height: 351px;
+  width: 363px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 38px 24.5px;
+  border: 1px solid rgba(233, 236, 239, 1);
+  margin: 0px 58px 303px 258px;
+}
+
+.buttonForm {
+  width: 314px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 13px 20px 13px 20px;
+  background-color: rgba(253, 55, 126, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 19.36px;
+  font-weight: 500;
+}
+
+label {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+p {
+  height: 20px;
+  width: 126px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #868e96;
+  margin-bottom: 17.7px;
+}
+
+.containerSelect {
+  display: flex;
+}
+
+.inputText {
+  height: 52.8px;
+  width: 314px;
+  border-radius: 8px;
+  padding-left: 16px;
+  background-color: rgba(248, 249, 250, 1);
+  border: 2px rgba(248, 249, 250, 1);
+}
+
+.inputValue {
+  height: 48px;
+  width: 128px;
+
+  border-radius: 8px;
+  border: 2px rgba(248, 249, 250, 1);
+  background-color: rgba(248, 249, 250, 1);
+  justify: space-between;
+}
+
+.selectLeft {
+  display: flex;
+  flex-direction: column;
+  margin-right: 36px;
+}
+
+.selectRight {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  height: 48px;
+  width: 150px;
+  left: 0px;
+  top: 31px;
+  border-radius: 8px;
+  padding: 0px, 16px, 0px, 16px;
+  border: 2px solid rgba(248, 249, 250, 1);
+  background-color: rgba(248, 249, 250, 1);
+}
