@@ -1,30 +1,64 @@
 import Card from "../Card";
 import "./style.css";
 import NoCard from "./Incons/nocard.svg";
+import ButtonFiltrarEntrada from "../ButtonFilterEntrada";
+import ButtonFiltrarTodos from "../ButtonFiltrarTodos";
+import ButtonDespesa from "../ButtonDespesa";
+import { useState } from "react";
 
-function List({ listTransactions }) {
+function List({
+  listTransactions,
+  filterList,
+  setListTransactions,
+  setFilterList,
+}) {
   return (
     <>
       <div>
         <div className="containerHigher">
           <p className="textTitleList">Resumo fianceiro</p>
-          <button className="buttonList">Todos</button>
-          <button className="buttonList">Entradas</button>
-          <button className="buttonList">Despesas</button>
+          <ButtonFiltrarTodos
+            listTransactions={listTransactions}
+            setListTransactions={setListTransactions}
+            setFilterList={setFilterList}
+          />
+          <ButtonFiltrarEntrada
+            listTransactions={listTransactions}
+            setFilterList={setFilterList}
+            filterList={filterList}
+          />
+
+          <ButtonDespesa
+            listTransactions={listTransactions}
+            setFilterList={setFilterList}
+            filterList={filterList}
+          />
         </div>
         <ul>
-          {listTransactions.length > 0 ? (
-            listTransactions.map((elemente, indice) => {
+          {filterList.length > 0 ? (
+            filterList.map((elemente, indice) => {
               return (
                 <li key={indice}>
-                  <Card transactions={elemente} indice={indice} />
+                  <Card
+                    transactions={elemente}
+                    indice={indice}
+                    filterList={filterList}
+                    setFilterList={setFilterList}
+                    setListTransactions={setListTransactions}
+                    listTransactions={listTransactions}
+                  />
                 </li>
               );
             })
           ) : (
             <>
+              <li className="listempty">
+                <p className="textempty">
+                  Você ainda não possui nenhum lançamento
+                </p>
+              </li>
               <li>
-                <p>Você ainda não possui nenhum lançamento</p>
+                <img src={NoCard} />
               </li>
               <li>
                 <img src={NoCard} />

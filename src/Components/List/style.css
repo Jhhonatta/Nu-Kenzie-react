@@ -29,4 +29,14 @@
 
 li {
   margin-top: 32px;
+  width: 562px;
+}
+
+.textempty {
+  width: 450px;
+  font-family: Nunito;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+  color: rgba(52, 58, 64, 1);
 }

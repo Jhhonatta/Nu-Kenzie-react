@@ -1,19 +1,23 @@
 import "./reset.css";
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Nukenzie from "./Icons/NuKenzie.svg";
 import Index from "./Components/Index";
 import ButtonHeader from "./Components/ButtonHeader";
 import Form from "./Components/Form";
 import List from "./Components/List";
+import Somatorio from "./Components/CardTotalMoney";
 
 function App() {
   const [homePage, setHomePage] = useState(true);
 
-  const [listTransactions, setListTransactions] = useState([
-    { description: "Salário recebido", type: "entrada", value: 2500 },
-    { description: "Conta de luz", type: "saída", value: -150 },
-  ]);
+  const [listTransactions, setListTransactions] = useState([]);
+
+  const [filterList, setFilterList] = useState(listTransactions);
+
+  useEffect(() => {
+    setFilterList(listTransactions);
+  }, [, listTransactions]);
 
   return homePage ? (
     <Index setHomePage={setHomePage} />
@@ -24,11 +28,25 @@ function App() {
         <ButtonHeader setHomePage={setHomePage} />
       </header>
       <main>
-        <Form
-          setListTransactions={setListTransactions}
+        <div>
+          <Form
+            setListTransactions={setListTransactions}
+            listTransactions={listTransactions}
+            setFilterList={setFilterList}
+          />
+          {listTransactions.length !== 0 ? (
+            <Somatorio listTransactions={listTransactions} />
+          ) : (
+            false
+          )}
+        </div>
+
+        <List
           listTransactions={listTransactions}
+          filterList={filterList}
+          setListTransactions={setListTransactions}
+          setFilterList={setFilterList}
         />
-        <List listTransactions={listTransactions} />
       </main>
     </>
   );

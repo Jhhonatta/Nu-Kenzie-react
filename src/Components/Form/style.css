@@ -6,7 +6,7 @@ form {
   flex-direction: column;
   padding: 38px 24.5px;
   border: 1px solid rgba(233, 236, 239, 1);
-  margin: 0px 58px 303px 258px;
+  margin: 0px 58px 15px 258px;
 }
 
 .buttonForm {
@@ -20,6 +20,10 @@ form {
   font-size: 16px;
   line-height: 19.36px;
   font-weight: 500;
+}
+
+.buttonForm:hover {
+  background-color: rgba(227, 73, 129, 1);
 }
 
 label {

@@ -1,19 +1,25 @@
 import { useState } from "react";
 import "./style.css";
 
-function Form({ setListTransactions, listTransactions }) {
+function Form({ setListTransactions, listTransactions, setFilterList }) {
   function handlerInput(event) {
+    const transactionsDescription = event.nativeEvent.path[1][0].value;
+    const transactionsType = event.nativeEvent.path[1][2].value;
+    const transactionsValue =
+      transactionsType === "entrada"
+        ? +event.nativeEvent.path[1][1].value
+        : -event.nativeEvent.path[1][1].value;
+
     event.preventDefault();
     setListTransactions([
       ...listTransactions,
       {
-        description: event.nativeEvent.path[1][0].value,
-        type: event.nativeEvent.path[1][2].value,
-        value: +event.nativeEvent.path[1][1].value,
+        description: transactionsDescription,
+        type: transactionsType,
+        value: transactionsValue,
       },
     ]);
-    console.log(event.nativeEvent.path[1][2].value);
-    console.log(listTransactions);
+    setFilterList(listTransactions);
   }
   return (
     <form>

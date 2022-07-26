@@ -3,9 +3,11 @@
   height: 781px;
   position: 0;
   display: flex;
+  width: 100%;
 }
 
 .left-block {
+  width: 100%;
   height: auto;
   margin: 214px 48px 0px 256px;
 }
@@ -15,7 +17,7 @@
   font-size: 38px;
   line-height: 48px;
   font-weight: 800;
-  width: 347px;
+  width: auto;
   height: 144px;
   font-family: "Nunito";
 }
@@ -48,7 +50,7 @@ p {
 }
 
 .right-block {
-  width: 593px;
+  width: 100%;
   height: 593px;
 }
 

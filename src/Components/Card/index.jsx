@@ -1,7 +1,14 @@
 import trash from "./Icons/trash.svg";
 import "./style.css";
+import ButtonDelete from "../ButtonDelete";
 
-function Card({ transactions, indice }) {
+function Card({
+  transactions,
+  indice,
+  listTransactions,
+  setListTransactions,
+  setFilterList,
+}) {
   return transactions.type === "entrada" ? (
     <>
       <div className="containerSupreme" key={indice}>
@@ -13,7 +20,13 @@ function Card({ transactions, indice }) {
           </div>
           <div className="block-right">
             <p className="priceCard">{`R$ ${transactions.value}`}</p>
-            <img src={trash} className="imgTrash" />
+            <ButtonDelete
+              listTransactions={listTransactions}
+              indice={indice}
+              setListTransactions={setListTransactions}
+              setFilterList={setFilterList}
+            />
+            {/* <img src={trash} className="imgTrash" listTransactions={listTransactions}/> */}
           </div>
         </div>
       </div>
@@ -28,8 +41,12 @@ function Card({ transactions, indice }) {
             <p>Despesa</p>
           </div>
           <div className="block-right">
-            <p className="priceCard">{`R$ ${-transactions.value}`}</p>
-            <img src={trash} className="imgTrash" />
+            <p className="priceCard">{`R$ ${transactions.value}`}</p>
+            <ButtonDelete
+              listTransactions={listTransactions}
+              indice={indice}
+              setListTransactions={setListTransactions}
+            />
           </div>
         </div>
       </div>
