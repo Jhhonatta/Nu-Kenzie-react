@@ -6,9 +6,9 @@ Este foi o meu primeiro projeto em react e o meu objetivo foi exercitar os conce
 
 Conceitos utilizados:
 
-HTML5
-CSS3
-React
+HTML5 br
+CSS3 br
+React br
 Hooks (useState, useEffect)
 
 Vejo vocês no meu próximo projeto, até breve!
