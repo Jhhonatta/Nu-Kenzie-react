@@ -1,11 +1,15 @@
 import "./style.css";
 
 function ButtonHeader({ setHomePage }) {
-  function changeIndex() {
-    setHomePage(true);
-  }
-
-  return <button onClick={changeIndex}>Inicio</button>;
+  return (
+    <button
+      onClick={() => {
+        setHomePage(true);
+      }}
+    >
+      Inicio
+    </button>
+  );
 }
 
 export default ButtonHeader;

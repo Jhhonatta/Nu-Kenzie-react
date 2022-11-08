@@ -69,7 +69,8 @@ p {
   border-radius: 8px;
   border: 2px rgba(248, 249, 250, 1);
   background-color: rgba(248, 249, 250, 1);
-  justify: space-between;
+
+  padding-left: 10px;
 }
 
 .selectLeft {

@@ -1,16 +1,16 @@
-import { useState } from "react";
-
-function ButtonFiltrarEntrada({ listTransactions, setFilterList, filterList }) {
+function ButtonFiltrarEntrada({ listTransactions, setFilterList }) {
   function filtrarEntrada() {
     const listaFiltrada = listTransactions.filter(
       (elem) => elem.type === "entrada"
     );
     setFilterList(listaFiltrada);
-    console.log(listaFiltrada);
   }
 
   return (
-    <button className="buttonList" onClick={filtrarEntrada}>
+    <button
+      className="buttonList buttonEntryOrExpense"
+      onClick={filtrarEntrada}
+    >
       Entradas
     </button>
   );

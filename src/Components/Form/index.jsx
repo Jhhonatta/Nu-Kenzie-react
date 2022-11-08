@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./style.css";
 
 function Form({ setListTransactions, listTransactions, setFilterList }) {
@@ -29,7 +28,7 @@ function Form({ setListTransactions, listTransactions, setFilterList }) {
       <div className="containerSelect">
         <div className="selectLeft">
           <label>Valor</label>
-          <input placeholder="1" className="inputValue" />
+          <input placeholder="Ex: 20" className="inputValue" />
         </div>
         <div className="selectRight">
           <label>Tipo de valor</label>

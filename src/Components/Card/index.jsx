@@ -1,4 +1,3 @@
-import trash from "./Icons/trash.svg";
 import "./style.css";
 import ButtonDelete from "../ButtonDelete";
 
@@ -26,7 +25,6 @@ function Card({
               setListTransactions={setListTransactions}
               setFilterList={setFilterList}
             />
-            {/* <img src={trash} className="imgTrash" listTransactions={listTransactions}/> */}
           </div>
         </div>
       </div>
@@ -41,7 +39,7 @@ function Card({
             <p>Despesa</p>
           </div>
           <div className="block-right">
-            <p className="priceCard">{`R$ ${transactions.value}`}</p>
+            <p className="priceCard">{`R$ ${-1 * transactions.value}`}</p>
             <ButtonDelete
               listTransactions={listTransactions}
               indice={indice}

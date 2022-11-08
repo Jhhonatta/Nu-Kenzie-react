@@ -1,6 +1,6 @@
 .container {
   background-color: black;
-  height: 781px;
+  height: 100vh;
   position: 0;
   display: flex;
   width: 100%;
