@@ -13,5 +13,6 @@ Conceitos utilizados:
 <p>CSS3</p>
 <p>React</p>
 <p>Hooks (useState, useEffect)</p>
+<p>Confira meu projeto: https://nu-kenzie-react-sigma.vercel.app/</p>
 <b>Vejo vocês no meu próximo projeto, até breve!</b>
 </div>
