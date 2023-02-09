@@ -24,7 +24,7 @@ function App() {
   ) : (
     <>
       <header className="App-header">
-        <img src={Nukenzie} className="imgLogo" />
+        <img src={Nukenzie} className="imgLogo" alt={""} />
         <ButtonHeader setHomePage={setHomePage} />
       </header>
       <main>

@@ -57,10 +57,10 @@ function List({
                 </p>
               </li>
               <li>
-                <img src={NoCard} />
+                <img src={NoCard} alt={""} />
               </li>
               <li>
-                <img src={NoCard} />
+                <img src={NoCard} alt={""} />
               </li>
             </>
           )}

@@ -1,8 +1,12 @@
 import "./style.css";
 
 function Somatorio({ listTransactions }) {
-  const soma = listTransactions.reduce(
-    (previousValue, currentValue) => currentValue.value + previousValue,
+  const treatingNumber = listTransactions.map((elem) =>
+    elem.type === "saída" ? -elem.value : elem.value
+  );
+
+  const soma = treatingNumber.reduce(
+    (previousValue, currentValue) => currentValue + previousValue,
     0
   );
   return (
