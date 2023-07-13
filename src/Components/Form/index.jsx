@@ -46,6 +46,7 @@ function Form({ setListTransactions, listTransactions, setFilterList }) {
           </select>
         </div>
       </div>
+      <div className="containerButtonForm"></div>
       <button type="submit" className="buttonForm">
         Inserir valor
       </button>

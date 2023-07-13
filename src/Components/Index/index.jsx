@@ -9,16 +9,24 @@ function index({ setHomePage }) {
   return (
     <>
       <div className="container">
-        <div className="left-block">
-          <img src={nukenzie} className="logo" />
-          <p className="main-text">Centralize o controle das suas finanças</p>
-          <p className="textBottom">de forma rápida e segura</p>
-          <button onClick={changePage} className="buttonIndex">
-            Iniciar
-          </button>
-        </div>
-        <div className="right-block">
-          <img src={image} className="card" />
+        <div className="full-block">
+          <div className="left-block">
+            <div>
+              <img src={nukenzie} className="logo" alt="logo" />
+              <p className="main-text">
+                Centralize o controle das suas finanças
+              </p>
+              <p className="textBottom">de forma rápida e segura</p>
+            </div>
+            <div className="right-block">
+              <img src={image} className="card" alt="card" />
+            </div>
+          </div>
+          <div className="container-button">
+            <button onClick={changePage} className="buttonIndex">
+              Iniciar
+            </button>
+          </div>
         </div>
       </div>
     </>

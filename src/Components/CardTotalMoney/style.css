@@ -1,11 +1,9 @@
 .containerSomer {
-  width: 414px;
-  height: 96px;
+  height: auto;
   border-radius: 4px;
   border: 1px solid rgba(233, 236, 239, 1);
   background: rgba(255, 255, 255, 1);
-  margin-left: 257px;
-  margin-bottom: 15px;
+  margin: 5px;
 }
 
 .containerValueSome {
@@ -16,7 +14,7 @@
   font-family: Nunito;
   font-size: 16px;
   font-weight: 700;
-  line-height: 30px;
+  /* line-height: 30px; */
   color: #212529;
   margin: 20px 178px 6px 24px;
 }

@@ -14,7 +14,9 @@ function Card({
         <div className="containerGrey">
           <div className="containerSideGreen"></div>
           <div className="block-left">
-            <p className="titleCard">{transactions.description}</p>
+            <p className="titleCard">
+              {transactions.description.toUpperCase()}
+            </p>
             <p>Entrada</p>
           </div>
           <div className="block-right">
@@ -35,7 +37,9 @@ function Card({
         <div className="containerGrey">
           <div className="containerSideGrey"></div>
           <div className="block-left">
-            <p className="titleCard">{transactions.description}</p>
+            <p className="titleCard">
+              {transactions.description.toUpperCase()}
+            </p>
             <p>Despesa</p>
           </div>
           <div className="block-right">

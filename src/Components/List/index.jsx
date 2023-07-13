@@ -13,31 +13,33 @@ function List({
 }) {
   return (
     <>
-      <div>
+      <div className="containerList">
         <div className="containerHigher">
           <p className="textTitleList">Resumo fianceiro</p>
-          <ButtonFiltrarTodos
-            listTransactions={listTransactions}
-            setListTransactions={setListTransactions}
-            setFilterList={setFilterList}
-          />
-          <ButtonFiltrarEntrada
-            listTransactions={listTransactions}
-            setFilterList={setFilterList}
-            filterList={filterList}
-          />
+          <div className="containerButtons">
+            <ButtonFiltrarTodos
+              listTransactions={listTransactions}
+              setListTransactions={setListTransactions}
+              setFilterList={setFilterList}
+            />
+            <ButtonFiltrarEntrada
+              listTransactions={listTransactions}
+              setFilterList={setFilterList}
+              filterList={filterList}
+            />
 
-          <ButtonDespesa
-            listTransactions={listTransactions}
-            setFilterList={setFilterList}
-            filterList={filterList}
-          />
+            <ButtonDespesa
+              listTransactions={listTransactions}
+              setFilterList={setFilterList}
+              filterList={filterList}
+            />
+          </div>
         </div>
-        <ul>
+        <ul className="containerCard">
           {filterList.length > 0 ? (
             filterList.map((elemente, indice) => {
               return (
-                <li key={indice}>
+                <li key={indice} className="listCard">
                   <Card
                     transactions={elemente}
                     indice={indice}
@@ -57,10 +59,10 @@ function List({
                 </p>
               </li>
               <li>
-                <img src={NoCard} alt={""} />
+                <img src={NoCard} alt={""} className="noCard" />
               </li>
               <li>
-                <img src={NoCard} alt={""} />
+                <img src={NoCard} alt={""} className="noCard" />
               </li>
             </>
           )}

@@ -1,12 +1,12 @@
 .containerSupreme {
-  height: 87px;
-  width: 560px;
+  /* height: 87px; */
   border-radius: 4px;
   background-color: rgba(248, 249, 250, 1);
+  width: 100%;
 }
 
 .containerSideGreen {
-  height: 87px;
+  /* height: 87px; */
   width: 4px;
   background-color: rgba(3, 184, 152, 1);
   border-radius: 4px;
@@ -14,11 +14,12 @@
 
 .containerGrey {
   display: flex;
+  width: auto;
 }
 
 .containerSideGrey {
   display: flex;
-  height: 87px;
+  /* height: 87px; */
   width: 4px;
   background-color: rgba(233, 236, 239, 1);
   border-radius: 4px;
@@ -26,14 +27,17 @@
 
 .block-left {
   height: 68px;
-  width: 337px;
-  top: 8px;
-  margin: 8px 41px 0px 14px;
+  max-width: 337px;
+  padding-left: 5px;
+  /* margin: 8px 41px 0px 14px; */
 }
 
 .block-right {
   display: flex;
-  padding-top: 18px;
+  justify-content: end;
+  padding-top: 2px;
+  width: 100%;
+  /* padding-top: 18px; */
 }
 
 .imgTrash {
@@ -48,7 +52,7 @@
 
 .titleCard {
   height: 32px;
-  width: 337px;
+  max-width: 337px;
   top: 8px;
   font: 700;
   font-family: Nunito;
@@ -61,8 +65,8 @@
   font-family: Nunito;
   font-size: 12px;
   font-weight: 400;
-  line-height: 22px;
+  /* line-height: 22px; */
   letter-spacing: 0em;
-  text-align: left;
+  /* text-align: left; */
   color: rgba(33, 37, 41, 1);
 }

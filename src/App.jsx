@@ -23,31 +23,35 @@ function App() {
     <Index setHomePage={setHomePage} />
   ) : (
     <>
-      <header className="App-header">
-        <img src={Nukenzie} className="imgLogo" alt={""} />
-        <ButtonHeader setHomePage={setHomePage} />
-      </header>
-      <main>
-        <div>
-          <Form
-            setListTransactions={setListTransactions}
+      <div className="containerGeral">
+        <header className="App-header">
+          <img src={Nukenzie} className="imgLogo" alt={""} />
+          <div className="containerButtonHeader">
+            <ButtonHeader setHomePage={setHomePage} />
+          </div>
+        </header>
+        <main>
+          <div className="containerForm">
+            <Form
+              setListTransactions={setListTransactions}
+              listTransactions={listTransactions}
+              setFilterList={setFilterList}
+            />
+            {listTransactions.length !== 0 ? (
+              <Somatorio listTransactions={listTransactions} />
+            ) : (
+              false
+            )}
+          </div>
+
+          <List
             listTransactions={listTransactions}
+            filterList={filterList}
+            setListTransactions={setListTransactions}
             setFilterList={setFilterList}
           />
-          {listTransactions.length !== 0 ? (
-            <Somatorio listTransactions={listTransactions} />
-          ) : (
-            false
-          )}
-        </div>
-
-        <List
-          listTransactions={listTransactions}
-          filterList={filterList}
-          setListTransactions={setListTransactions}
-          setFilterList={setFilterList}
-        />
-      </main>
+        </main>
+      </div>
     </>
   );
 }

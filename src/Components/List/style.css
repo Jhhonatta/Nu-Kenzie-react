@@ -1,13 +1,58 @@
+.containerList {
+  width: 100%;
+  margin: 5px;
+}
+
+.containerCard {
+  width: 100%;
+  max-height: 300px;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  /* @media (min-width: 768px) {
+    max-height: 338px;
+  } */
+
+  @media (min-width: 1024px) {
+    max-height: 600px;
+    padding: 5px;
+  }
+}
+
+.listCard {
+  width: 97%;
+  margin: 0;
+  margin-top: 5px;
+}
+
 .containerHigher {
   display: flex;
-  width: 562px;
-  height: 40px;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  /* margin: 15px 5px; */
+  gap: 5px;
+
+  @media (min-width: 768px) {
+    width: 99%;
+    justify-content: space-between;
+    /* padding: 0px 5px; */
+  }
+}
+
+.containerButtons {
+  display: flex;
+  gap: 5px;
+
+  @media (min-width: 768px) {
+    gap: 45px;
+  }
 }
 
 .buttonList {
   height: 40px;
-  width: 89px;
-  margin: 0px 16px 0px 0px;
+  width: max-content;
+  margin: 0;
   border-radius: 8px;
 }
 
@@ -22,21 +67,35 @@
   font-family: Nunito;
   font-size: 16px;
   font-weight: 700;
-  line-height: 30px;
+  /* line-height: 30px; */
   color: rgba(33, 37, 41, 1);
-  margin-right: 110px;
+  margin: 0;
+  text-align: center;
 }
 
 li {
-  margin-top: 32px;
-  width: 562px;
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+}
+
+.noCard {
+  width: 97%;
+  height: 100px;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
 }
 
 .textempty {
-  width: 450px;
+  width: 100%;
+  height: auto;
+  margin: auto;
   font-family: Nunito;
   font-size: 22px;
   font-weight: 700;
-  line-height: 34px;
+  /* line-height: 34px; */
+  text-align: center;
   color: rgba(52, 58, 64, 1);
 }
