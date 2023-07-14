@@ -2,7 +2,7 @@ import Card from "../Card";
 import "./style.css";
 import NoCard from "./Incons/nocard.svg";
 import ButtonFiltrarEntrada from "../ButtonFilterEntry";
-import ButtonFiltrarTodos from "../ButtonFiltrarTodos";
+import ButtonFiltrarTodos from "../ButtonFilterEvery";
 import ButtonDespesa from "../ButtonDespesa";
 
 function List({

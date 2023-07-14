@@ -9,20 +9,20 @@ function index({ setHomePage }) {
   return (
     <>
       <div className="container">
-        <div className="full-block">
-          <div className="left-block">
+        <div className="fullBlock">
+          <div className="blockTextAndImag">
             <div>
               <img src={nukenzie} className="logo" alt="logo" />
-              <p className="main-text">
+              <p className="mainText">
                 Centralize o controle das suas finanças
               </p>
               <p className="textBottom">de forma rápida e segura</p>
             </div>
-            <div className="right-block">
+            <div className="blockCard">
               <img src={image} className="card" alt="card" />
             </div>
           </div>
-          <div className="container-button">
+          <div className="containerButton">
             <button onClick={changePage} className="buttonIndex">
               Iniciar
             </button>

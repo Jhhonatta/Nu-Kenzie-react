@@ -4,7 +4,7 @@
   overflow: hidden;
 }
 
-.App-header {
+.appHeader {
   overflow: hidden;
   height: auto;
   width: auto;
@@ -16,7 +16,6 @@
 
 .imgLogo {
   width: 6rem;
-  /* height: 19.53px; */
 
   @media (min-width: 765px) {
   }
@@ -31,8 +30,7 @@
 main {
   display: flex;
   flex-direction: column;
-  /* height: 459px;
-  width: 562px; */
+
   margin-top: 9px;
   overflow: hidden;
 

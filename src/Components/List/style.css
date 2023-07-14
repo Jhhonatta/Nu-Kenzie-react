@@ -6,12 +6,8 @@
 .containerCard {
   width: 100%;
   max-height: 300px;
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden;
-
-  /* @media (min-width: 768px) {
-    max-height: 338px;
-  } */
 
   @media (min-width: 1024px) {
     max-height: 600px;
@@ -28,15 +24,18 @@
 .containerHigher {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 97%;
   height: auto;
-  /* margin: 15px 5px; */
+
   gap: 5px;
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
 
   @media (min-width: 768px) {
     width: 99%;
     justify-content: space-between;
-    /* padding: 0px 5px; */
   }
 }
 
@@ -63,11 +62,12 @@
 
 .textTitleList {
   height: 30px;
-  width: 137px;
+  width: max-content;
+
   font-family: Nunito;
   font-size: 16px;
   font-weight: 700;
-  /* line-height: 30px; */
+
   color: rgba(33, 37, 41, 1);
   margin: 0;
   text-align: center;
@@ -95,7 +95,7 @@ li {
   font-family: Nunito;
   font-size: 22px;
   font-weight: 700;
-  /* line-height: 34px; */
+
   text-align: center;
   color: rgba(52, 58, 64, 1);
 }

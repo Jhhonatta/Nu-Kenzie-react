@@ -3,7 +3,9 @@ function ButtonFiltrarEntrada({ listTransactions, setFilterList }) {
     const listaFiltrada = listTransactions.filter(
       (elem) => elem.type === "entrada"
     );
-    setFilterList(listaFiltrada);
+    if (listaFiltrada.length > 0) {
+      setFilterList(listaFiltrada);
+    }
   }
 
   return (

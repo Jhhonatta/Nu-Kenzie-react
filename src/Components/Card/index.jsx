@@ -13,13 +13,13 @@ function Card({
       <div className="containerSupreme" key={indice}>
         <div className="containerGrey">
           <div className="containerSideGreen"></div>
-          <div className="block-left">
+          <div className="blockLeft">
             <p className="titleCard">
               {transactions.description.toUpperCase()}
             </p>
             <p>Entrada</p>
           </div>
-          <div className="block-right">
+          <div className="blockRight">
             <p className="priceCard">{`R$ ${transactions.value}`}</p>
             <ButtonDelete
               listTransactions={listTransactions}
@@ -36,13 +36,13 @@ function Card({
       <div className="containerSupreme" key={indice}>
         <div className="containerGrey">
           <div className="containerSideGrey"></div>
-          <div className="block-left">
+          <div className="blockLeft">
             <p className="titleCard">
               {transactions.description.toUpperCase()}
             </p>
             <p>Despesa</p>
           </div>
-          <div className="block-right">
+          <div className="blockRight">
             <p className="priceCard">{`R$ ${-1 * transactions.value}`}</p>
             <ButtonDelete
               listTransactions={listTransactions}

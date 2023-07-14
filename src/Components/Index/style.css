@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.full-block {
+.fullBlock {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@
   }
 }
 
-.left-block {
+.blockTextAndImag {
   width: 100%;
   height: auto;
   display: flex;
@@ -31,7 +31,7 @@
   }
 }
 
-.right-block {
+.blockCard {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -46,7 +46,7 @@
   }
 }
 
-.main-text {
+.mainText {
   color: rgba(255, 255, 255, 1);
   font-size: 38px;
   line-height: 48px;
@@ -70,8 +70,12 @@
 }
 
 .logo {
-  margin-bottom: 30.47px;
+  margin-bottom: 150px;
   width: 160px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 90px;
+  }
 }
 
 p {
@@ -108,17 +112,12 @@ p {
   }
 }
 
-.container-button {
+.containerButton {
   @media (min-width: 768px) {
     width: 100%;
     display: flex;
     display: flex;
     justify-content: center;
-  }
-
-  @media (min-width: 1024px) {
-    justify-content: start;
-    margin-left: 15px;
   }
 
   @media (min-width: 1440px) {

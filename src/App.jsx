@@ -17,14 +17,14 @@ function App() {
 
   useEffect(() => {
     setFilterList(listTransactions);
-  }, [, listTransactions]);
+  }, [listTransactions]);
 
   return homePage ? (
     <Index setHomePage={setHomePage} />
   ) : (
     <>
       <div className="containerGeral">
-        <header className="App-header">
+        <header className="appHeader">
           <img src={Nukenzie} className="imgLogo" alt={""} />
           <div className="containerButtonHeader">
             <ButtonHeader setHomePage={setHomePage} />

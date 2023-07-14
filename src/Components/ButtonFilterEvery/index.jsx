@@ -1,8 +1,4 @@
-function ButtonFiltrarTodos({
-  listTransactions,
-  setListTransactions,
-  setFilterList,
-}) {
+function ButtonFiltrarTodos({ listTransactions, setFilterList }) {
   function filtratTodos() {
     setFilterList(listTransactions);
   }

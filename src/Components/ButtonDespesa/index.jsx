@@ -4,7 +4,9 @@ function ButtonDespesa({ listTransactions, setFilterList, filterList }) {
     const listaFiltrada = listTransactions.filter(
       (elem) => elem.type === "saída"
     );
-    setFilterList(listaFiltrada);
+    if (listaFiltrada.length > 0) {
+      setFilterList(listaFiltrada);
+    }
   }
 
   return (
