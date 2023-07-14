@@ -1,5 +1,5 @@
 <h1>Hey, guys.</h1>
-Este foi o meu primeiro projeto em react e o meu objetivo foi exercitar os conceitos básicos com a finalidade de fixa-los, por isso optei por não deixa-lo responsivo.
+Este foi o meu primeiro projeto em react e o meu objetivo foi exercitar os conceitos básicos com a finalidade de fixa-los.
 
 Vercel: https://nu-kenzie-react-sigma.vercel.app/
 
@@ -13,4 +13,5 @@ Conceitos utilizados:
 <p>CSS3</p>
 <p>React</p>
 <p>Hooks (useState, useEffect)</p>
+<p>Responsividade</p>
 <b>Vejo vocês no meu próximo projeto, até breve!</b>
