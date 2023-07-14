@@ -24,16 +24,21 @@
 }
 
 .blockLeft {
-  height: 68px;
-  max-width: 337px;
+  width: 100%;
+
   padding-left: 5px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .blockRight {
   display: flex;
   justify-content: end;
   padding-top: 2px;
-  width: 100%;
 }
 
 .imgTrash {
@@ -47,14 +52,20 @@
 }
 
 .titleCard {
-  height: 32px;
-  max-width: 337px;
+  height: 100%;
   top: 8px;
   font: 700;
   font-family: Nunito;
   font-size: 16px;
   line-height: 30px;
   color: rgba(33, 37, 41, 1);
+
+  white-space: normal;
+
+  @media (min-width: 768px) {
+    overflow: hidden;
+    width: 400px;
+  }
 }
 
 .priceCard {

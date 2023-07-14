@@ -14,7 +14,10 @@ function Card({
         <div className="containerGrey">
           <div className="containerSideGreen"></div>
           <div className="blockLeft">
-            <p className="titleCard">
+            <p
+              className="titleCard"
+              title={transactions.description.toUpperCase()}
+            >
               {transactions.description.toUpperCase()}
             </p>
             <p>Entrada</p>
