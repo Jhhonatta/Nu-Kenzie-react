@@ -37,8 +37,8 @@
 }
 
 .imgTrash {
-  height: 9.777778625488281px;
-  width: 8.55555534362793px;
+  height: 9px;
+  width: 8px;
   margin-top: 6px;
   background-image: url("./Icons/trash.svg");
   background-size: cover;

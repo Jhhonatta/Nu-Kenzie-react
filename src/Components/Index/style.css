@@ -43,6 +43,7 @@
   @media (min-width: 1024px) {
     width: max-content;
     margin-right: 16px;
+    margin-left: 5px;
   }
 }
 
